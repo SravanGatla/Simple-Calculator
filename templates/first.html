@@ -1,0 +1,144 @@
+{% extends "index.html" %}
+
+{% block mainContent %}
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>PYTHON TERMINOLOGY</title>
+</head>
+<body>
+<div id="header" class="section">
+    <p>PYLINT AND OTHERS(BASIC TERMINOLOGY) </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>FACTORY</span></h3>
+    <p>
+        In factory pattern, objects are created without exposing the logic to client and referring to the newly created object using a common interface.
+        Factory patterns are implemented in Python using factory method. ... The type of object used in factory method is determined by string which is passed through method.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Instantiation</span></h3>
+    <p>
+        The phrase "instantiating a class" means the same thing as "creating an object." When you create an object, you are creating an "instance" of a class, therefore "instantiating" a class.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Object</span></h3>
+    <p>
+        An Object is an instance of a Class. A class is like a blueprint while an instance is a copy of the class with actual values.
+        Python is object-oriented programming language which stress on objects i.e., it mainly emphasizes on functions.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Class</span></h3>
+    <p>
+        A class is a user-defined blueprint or prototype from which objects are created. Classes provide a means of bundling data and functionality together.
+        Creating a new class creates a new type of object, allowing new instances of that type to be made.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Namespace</span></h3>
+    <p>
+        Python implements namespaces as dictionaries. Imagine it as a name-to-object mapping where names are the keys and objects are the values.
+        A namespace allows us to have unique names for each object. If you don't know, this is just a quick reminder to tell you that strings, lists, functions, etc.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Constructor</span></h3>
+    <p>
+        A constructor is a special kind of method that Python calls when it instantiates an object using the definitions found in your class.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Fixture</span></h3>
+    <p>
+        Fixtures define the steps and data that constitute the arrange phase of a test. In pytest, they are functions you define that serve this purpose.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Hint python</span></h3>
+    <p>
+        Type hinting is a formal solution to statically indicate the type of a value within your Python code.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Type Casting</span></h3>
+    <p>
+        Type casting is a method used to change the variables/ values declared in a certain data type into a different data type to match the operation required to be performed by the code snippet.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Unit test</span></h3>
+    <p>
+        Unit Testing in Python. ... Unit testing is a software testing method by which individual units of source code are put under various tests to determine whether they are fit for use (Source).
+        It determines and ascertains the quality of your code.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Static</span></h3>
+    <p>
+        When we declare a variable inside a class but outside any method, it is called as class or static variable in python.
+        Class or static variable can be referred through a class but not directly through an instance.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>class method</span></h3>
+    <p>
+        A class method is a method which is bound to the class and not the object of the class.
+        They have the access to the state of the class as it takes a class parameter that points to the class and not the object instance.
+        It can modify a class state that would apply across all the instances of the class.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Facade</span></h3>
+    <p>
+        Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes, library or framework.
+        While Facade decreases the overall complexity of the application, it also helps to move unwanted dependencies to one place.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Design patterns</span></h3>
+    <p>
+        Class Creational Pattern and the Object Creational pattern is the major categorization of the Creational Design Patterns.
+        While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Method</span></h3>
+    <p>
+        Function in python is called as a called method
+        Methods in python are very similar to functions except for two major differences. The method is implicitly used for an object for which it is called.
+        The method is accessible to data that is contained within the class.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Property</span></h3>
+    <p>
+        The property () method in Python provides an interface to instance attributes. It encapsulates instance attributes and provides a property, same as Java and C#.
+        The property () method takes the get, set and delete methods as arguments and returns an object of the property class.
+    </p>
+</div>
+<hr>
+<footer>
+    <center><p>&copy; SravanKumar Gatla</p></center>
+</footer>
+</body>
+</html>
+{% endblock %}

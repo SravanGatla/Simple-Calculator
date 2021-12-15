@@ -1,0 +1,93 @@
+{% extends "index.html" %}
+
+{% block mainContent %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fourth page</title>
+</head>
+<body>
+<div id="header" class="section">
+    <hr>
+    <h1>SOLID OBJECT ORIENTED DESIGN</h1>
+</div>
+<hr>
+<div class="section">
+    <h3><span>INTRODUCTION</span></h3>
+    <p>
+        <b>SOLID</b> is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin (also known as Uncle Bob).
+        <b>Note:</b> While these principles can apply to various programming languages, the sample code contained in this article will use PHP.
+        These principles establish practices that lend to developing software with considerations for maintaining and extending as the project grows.
+        Adopting these practices can also contribute to avoiding code smells, refactoring code, and Agile or Adaptive software development.
+
+        SOLID stands for:
+        <ul>
+            <li>S - Single-responsibility Principle</li>
+            <li>O - Open-closed Principle</li>
+            <li>L - Liskov Substitution Principle</li>
+            <li>I - Interface Segregation Principle</li>
+            <li>D - Dependency Inversion Principle</li>
+        you will be introduced to each principle individually to understand how SOLID can help make you a better developer.
+        </ul>
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Single-Responsibility Principle</span></h3>
+    <p>
+        <b>Single-responsibility Principle (SRP) states:</b>
+        A class should have one and only one reason to change, meaning that a class should have only one job.<br><br>
+        <img class="img" src="/static/single-responsibility%20.png" alt="single-responsibility">
+        here in this figure addition class is only used to perform addition function.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Open-Closed Principle</span></h3>
+    <p>
+        <b>Open-closed Principle (OCP) states:</b>
+        Objects or entities should be open for extension but closed for modification.
+        This means that a class should be extendable without modifying the class itself.<br><br>
+        <img class="img" src="/static/openclosed.png" alt="openclosed">
+        here in the image variables are declared in constructor. they are declared for using in addition, subtraction, multiplication, division.
+        but they can also be used for exponents and other calculations.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Liskov Substitution Principle</span></h3>
+    <p>
+        <b>Liskov Substitution Principle states:</b>
+        Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.
+        This means that every subclass or derived class should be substitutable for their base or parent class.<br><br>
+        <img class="img" src="/static/Liskov%20Substitution%20Principle.png" alt="Liskov Substitution Principle">
+        in this image if we see variable type and no of variables are not changed in both "calculation" class (parent class) and "addition" (child class) making them reusable in
+        other classes
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Interface Segregation Principle</span></h3>
+    <p>
+        <b>Interface segregation principle states:</b>
+        A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Dependency Inversion Principle</span></h3>
+    <p>
+        <b>Dependency inversion principle states:</b>
+        Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module,
+        but they should depend on abstractions.
+        This principle allows for decoupling.
+    </p>
+</div>
+<hr>
+<footer>
+    <center><p>&copy; SravanKumar Gatla</p></center>
+</footer>
+</body>
+</html>
+{% endblock %}

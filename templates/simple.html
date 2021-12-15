@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+
+{% block mainContent %}
+    <center>
+    <div class = "jumbotron jumbotron-fluid">
+        <div class = "container">
+            <h1 class = "display-8" > FLASK CALCULATOR</h1>
+            <p class="lead"> PROJECT 3</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <form class = "container" action="{{ url_for('calculate')}}" method="post">
+        <div class="row">
+            <div class="col-lg-2 col-md-3">
+                <input type="number" name="firstNumber" class="form-control" placeholder="insert first number" required>
+            </div>
+            <div class="col-lg-2">
+                <select id="selectOperation" class="form control" name="operation" required>
+                    <option value="">select operation</option>
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <input type="number" name="secondNumber" class="form-control"  placeholder="insert second number" required>
+            </div>
+            <br><br>
+            <div class="col-log-3">
+                <input type="submit" value="calculate" class="btn btn-primary">
+            </div>
+            <div class = "col-lg-3">
+                <div class="alert {{ color }}">{{ note }}</div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-1">
+                <div class="text-center">=</div>
+            </div>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" placeholder="Result" value="{{ result }}">
+            </div>
+        </div>
+    </form>
+    </center>
+{% endblock %}

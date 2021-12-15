@@ -1,0 +1,60 @@
+{% extends "index.html" %}
+
+{% block mainContent %}
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>second page</title>
+</head>
+<body>
+<div id="header" class="section">
+    <h1>AAA TESTING</h1>
+</div>
+<hr>
+<div class="section">
+    <h3><span>AAA testing with Python(Arrange-Act-Assert)</span></h3>
+    <p>
+        It stands for arrange, act, assert. AAA is a way to structure your unit tests so they're easier to read, maintain, and enhance.
+
+        Arrange/Act/Assert (AAA) is a pattern for arranging and formatting code in Unit Test methods.
+        It is a best practice to author your tests in more natural and convenient way. The idea is to develop a unit test by following these 3 simple steps:
+        <ul>
+            <li>Arrange – setup the testing objects and prepare the prerequisites for your test.</li>
+            <li>Act – perform the actual work of the test.</li>
+            <li>Assert – verify the result.</li>
+        </ul>
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Benefits of Using Arrange Act Assert</span></h3>
+    <p>
+        <ul>
+            <li>Clearly separates what is being tested from the setup and verification steps.
+            <li>Clarifies and focuses attention on a historically successful and generally necessary set of test steps.
+            <li>Makes some test smells more obvious:
+            <li>Assertions intermixed with "Act" code.
+            <li>Test methods that try to test too many things at once.
+        </ul>
+    </p>
+</div>
+<hr>
+<div class="section">
+    <h3><span>Arrange/Act/Assert with calculator project</span></h3>
+    <p>
+        Explaination of AAA testing using calculator project<br><br>
+        <img class="img" src="/static/AAA%20Testing.png" alt="AAA testing">
+        here if we see there are 3 images seperated by the white line. these 3 images are taken from calculator project.
+        first image is declaring variables using constrcutors so that same variables can be used multiple times
+        second image is performing the action to be taken accoridng to the class i.e addition class is perforing addition action
+        third image is asserting values and checking whether the action is correct or wrong
+    </p>
+</div>
+<hr>
+<footer>
+    <center><p>&copy; SravanKumar Gatla</p></center>
+</footer>
+</body>
+</html>
+{% endblock %}
