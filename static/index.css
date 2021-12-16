@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    background-image: url("calculator_home1.jpg") ;
+    background-color: antiquewhite ;
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
