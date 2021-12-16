@@ -1,7 +1,8 @@
 import columns as columns
 import data as data
-from flask import Flask, render_template, request, url_for,json,jsonify
+from flask import Flask, render_template, request, url_for, json, jsonify
 import pandas as pd
+
 import csv
 
 app = Flask(__name__)
@@ -39,6 +40,7 @@ def fourth():
 
 @app.route("/calculate", methods=["post"])
 def calculate():
+    data = request.json
     first_number = int(request.form["firstNumber"])
     operation = request.form["operation"]
     second_number = int(request.form["secondNumber"])
@@ -60,11 +62,11 @@ def calculate():
         note = "select anyone of the displayed operations"
         color = "alert-danger"
         return render_template("simple.html", note=note)
+    calculation = pd.DataFrame([[data["first_number"], data["second_number"], data["operation"], data["result"]]],
+                               columns=['first_number', 'second_number', 'operation', 'result'])
+    calculation.to_csv("calculations.csv", mode='a', index=False, header=False)
     return render_template("simple.html", result=result, note=note, color=color)
 
-
-calculation = pd.DataFrame([[data["first_number"], data["second_number"], data["operation"], data["result"]]], columns = ['first_number', 'second_number', 'operation', 'result'])
-calculation.to_csv("calculations.csv", mode='a', index=False, header=False)
 
 if __name__ == '__main__':
     app.run(debug=True)
