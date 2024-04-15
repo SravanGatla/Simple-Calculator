@@ -13,29 +13,29 @@ def main():  # put application's code here
     return render_template("index.html")
 
 
-@app.route("/simple")
-def simple():
-    return render_template("simple.html")
+@app.route("/Simple_Calculator")
+def Simple_Calculator():
+    return render_template("Simple_Calculator.html")
 
 
-@app.route("/first")
-def first():
-    return render_template("first.html")
+@app.route("/AAA_Testing")
+def AAA_Testing():
+    return render_template("AAA_Testing.html")
 
 
-@app.route("/second")
-def second():
-    return render_template("second.html")
+@app.route("/OOPS_Concepts")
+def OOPS_Concepts():
+    return render_template("OOPS_Concepts.html")
 
 
-@app.route("/third")
-def third():
-    return render_template("third.html")
+@app.route("/Python_Terminology")
+def Python_Terminology():
+    return render_template("Python_Terminology.html")
 
 
-@app.route("/fourth")
-def fourth():
-    return render_template("fourth.html")
+@app.route("/SOLID_Object_Oriente_Design")
+def SOLID_Object_Oriente_Design():
+    return render_template("SOLID_Object_Oriente_Design.html")
 
 
 @app.route("/calculate", methods=["post"])
@@ -61,8 +61,8 @@ def calculate():
     else:
         note = "select anyone of the displayed operations"
         color = "alert-danger"
-        return render_template("simple.html", note=note)
-    return render_template("simple.html", result=result, note=note, color=color)
+        return render_template("Simple_Calculator.html", note=note)
+    return render_template("Simple_Calculator.html", result=result, note=note, color=color)
 
 
 if __name__ == '__main__':
